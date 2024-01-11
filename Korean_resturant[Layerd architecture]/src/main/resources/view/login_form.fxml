@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="800.0" prefWidth="1075.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.loginFormController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1100.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asses/foodbg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="550.0" layoutY="35.0" opacity="0.8" prefHeight="717.0" prefWidth="492.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="15.0" layoutY="-29.0" prefHeight="175.0" prefWidth="247.0" text="LOGIN">
+               <font>
+                  <Font name="Cambria Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="79.0" prefHeight="29.0" prefWidth="142.0" text="Glad you’re back.!">
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="228.0" fitWidth="334.0" layoutX="174.0" layoutY="-11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asses/logodising.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="53.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asses/username.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsername" layoutX="124.0" layoutY="283.0" prefHeight="40.0" prefWidth="306.0" promptText="UserName" style="-fx-background-color: rgba(0,0,0,0);">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="198.0" endY="-0.220245361328125" layoutX="233.0" layoutY="326.0" startX="-107.97722625732422" startY="-0.22023418545722961" />
+            <ImageView fitHeight="51.0" fitWidth="61.0" layoutX="51.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asses/password.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtPassword" layoutX="125.0" layoutY="373.0" prefHeight="40.0" prefWidth="299.0" promptText="Password" style="-fx-background-color: rgba(0,0,0,0);">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </PasswordField>
+            <Line endX="200.0" layoutX="225.0" layoutY="415.0" startX="-100.0" />
+            <CheckBox layoutX="178.0" layoutY="432.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="171.0" text="Remember Me" />
+            <Button layoutX="166.0" layoutY="510.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="57.0" prefWidth="186.0" style="-fx-background-color: #04BFAD;" styleClass="loginbtn" text="LOGIN">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="139.0" layoutY="636.0" mnemonicParsing="false" onAction="#btnCreateanAccountOnAction" prefHeight="40.0" prefWidth="247.0" style="-fx-background-color: #04BFAD;" styleClass="loginbtn" text="Create An Account">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="lablebtn" />
+         </styleClass>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/style.css" />
+      <URL value="@../style/style.css" />
+   </stylesheets>
+</AnchorPane>

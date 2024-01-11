@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CreatePane" prefHeight="800.0" prefWidth="1075.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SignupFormController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1100.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asses/foodbg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="536.0" layoutY="37.0" opacity="0.72" prefHeight="706.0" prefWidth="477.0" style="-fx-background-color: #ffffff;" styleClass="lablebtn" stylesheets="@../style/style.css">
+         <children>
+            <Label layoutX="13.0" layoutY="16.0" prefHeight="115.0" prefWidth="208.0" text="SIGNUP">
+               <font>
+                  <Font name="Cambria Bold Italic" size="44.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="201.0" fitWidth="275.0" layoutX="223.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asses/logodising.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="68.0" layoutX="86.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asses/username.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="68.0" layoutX="87.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asses/password.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="68.0" layoutX="87.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asses/password.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsername" layoutX="157.0" layoutY="243.0" onAction="#btnSignupOnAction" opacity="0.8" prefHeight="40.0" prefWidth="299.0" promptText="UserName" style="-fx-background-color: rgba(0,0,0,0); -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtpw" layoutX="162.0" layoutY="304.0" opacity="0.8" prefHeight="40.0" prefWidth="299.0" promptText="Password" style="-fx-background-color: rgba(0,0,0,0); -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="txtcpw" layoutX="160.0" layoutY="372.0" opacity="0.82" prefHeight="40.0" prefWidth="299.0" promptText="Confirm Password" style="-fx-background-color: rgba(0,0,0,0); -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="143.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnCreateanAccountOnAction" prefHeight="63.0" prefWidth="247.0" style="-fx-background-color: #04BFAD;" styleClass="loginbtn" stylesheets="@../style/style.css" text="Create An Account">
+               <font>
+                  <Font name="Cambria Bold" size="24.0" />
+               </font>
+            </Button>
+            <Line endX="196.0" layoutX="263.0" layoutY="286.0" startX="-109.0" />
+            <Line endX="196.0" layoutX="263.0" layoutY="345.0" startX="-109.0" />
+            <Line endX="196.0" layoutX="267.0" layoutY="416.0" startX="-109.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

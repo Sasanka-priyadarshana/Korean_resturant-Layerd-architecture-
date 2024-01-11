@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.PaymentDetailsController">
+   <children>
+      <ImageView fitHeight="746.0" fitWidth="916.0" layoutX="-1.0" opacity="0.59" pickOnBounds="true">
+         <image>
+            <Image url="@../asses/foodbg.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

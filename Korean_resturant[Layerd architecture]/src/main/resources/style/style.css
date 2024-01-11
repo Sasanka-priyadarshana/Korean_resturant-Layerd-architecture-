@@ -1,0 +1,46 @@
+.loginbtn{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #F0C12E;
+    -fx-text-fill: #000000;
+}
+.loginbtn:hover{
+    -fx-background-color: #424A&C;
+    -fx-text-fill: #ffffff;
+}
+.signupbtn{
+    -fx-font-weight: 700;
+}
+.sidePane{
+    -fx-background-radius: 0 50 50 0;
+    -fx-border-radius: 0 50 50 0;
+    -fx-background-color: #C2E4FF;
+    -fx-text-fill: #000000;
+    -fx-opacity: 80;
+}
+.headerPane{
+    -fx-background-radius: 0 0 0 0;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-color: #C2E4FF;
+    -fx-text-fill: #000000;
+    -fx-opacity: 80;
+}
+.btn {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-font-size: 15;
+}
+
+.btn:hover {
+    -fx-background-color: #44D3D5;
+    -fx-border-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+.lablebtn{
+    -fx-border-color: #000000;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-text-alignment: Center;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1100.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.MainFormController">
+   <children>
+      <Pane opacity="0.79" prefHeight="801.0" prefWidth="190.0" style="-fx-background-color: #04BFBF;">
+         <children>
+            <Button layoutX="31.0" layoutY="159.0" mnemonicParsing="false" onAction="#DashBoardOmAction" prefHeight="34.0" prefWidth="145.0" styleClass="btn" text="DashBoard">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="30.0" layoutY="237.0" mnemonicParsing="false" onAction="#CustomerOnAction" prefHeight="31.0" prefWidth="145.0" styleClass="btn" text="Customer">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="28.0" layoutY="317.0" mnemonicParsing="false" onAction="#MenuItemOnAction" prefHeight="31.0" prefWidth="145.0" styleClass="btn" text="Menu Item">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="27.0" layoutY="397.0" mnemonicParsing="false" onAction="#PaymentOnAction" prefHeight="31.0" prefWidth="145.0" styleClass="btn" text="Payment">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="27.0" layoutY="475.0" mnemonicParsing="false" onAction="#RoomOnAction" prefHeight="31.0" prefWidth="145.0" styleClass="btn" text="Room">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="27.0" layoutY="553.0" mnemonicParsing="false" onAction="#EmployeeOnAction" prefHeight="31.0" prefWidth="145.0" styleClass="btn" text="Employee">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="26.0" layoutY="629.0" mnemonicParsing="false" onAction="#SupplierOnAction" prefHeight="31.0" prefWidth="145.0" styleClass="btn" text="Supplier">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="210.0" layoutX="-6.0" layoutY="-19.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asses/logodising.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="24.0" layoutY="708.0" mnemonicParsing="false" onAction="#ReportsOnAction" prefHeight="31.0" prefWidth="145.0" styleClass="btn" text="Reports">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="190.0" layoutY="-1.0" opacity="0.79" prefHeight="55.0" prefWidth="916.0" style="-fx-background-color: #04BFBF;">
+         <children>
+            <Button layoutX="669.0" layoutY="14.0" mnemonicParsing="false" onAction="#SignOutOmAction" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: #04BFAD;" styleClass="btn" text="Sign Out">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane" layoutX="190.0" layoutY="55.0" prefHeight="746.0" prefWidth="916.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="navigationPane" prefHeight="706.0" prefWidth="832.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.OrdersFormController">
+   <children>
+      <ImageView fitHeight="746.0" fitWidth="916.0" opacity="0.59" pickOnBounds="true">
+         <image>
+            <Image url="@../asses/foodbg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="21.0" layoutY="175.0" prefHeight="213.0" prefWidth="856.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TextField fx:id="txtOrderID" editable="false" layoutX="209.0" layoutY="28.0" prefHeight="42.0" prefWidth="116.0" promptText="Orders_ID" styleClass="lablebtn">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="726.0" layoutY="161.0" mnemonicParsing="false" onAction="#AddOnAction" prefHeight="36.0" prefWidth="116.0" style="-fx-background-color: #00BBBE;" styleClass="btn" text="Add">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="cmbCustome_code" layoutX="26.0" layoutY="31.0" onAction="#cmbCustomeOnAction" prefWidth="150.0" promptText="Customer ID" styleClass="lablebtn" />
+            <TextField fx:id="txtstatus" editable="false" layoutX="357.0" layoutY="30.0" prefHeight="42.0" prefWidth="150.0" promptText="Status" styleClass="lablebtn">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmbtype" layoutX="528.0" layoutY="34.0" prefWidth="150.0" promptText="Type" styleClass="lablebtn" />
+            <Label fx:id="lblate" alignment="TOP_CENTER" layoutX="686.0" layoutY="31.0" prefHeight="32.0" prefWidth="150.0" text="Date">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtu_price" editable="false" layoutX="203.0" layoutY="116.0" prefHeight="36.0" prefWidth="150.0" promptText="Unit Price" styleClass="lablebtn">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtqty" layoutX="399.0" layoutY="116.0" onAction="#txtqtyOnAction" prefHeight="36.0" prefWidth="79.0" promptText="Qty" styleClass="lablebtn">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmbitem_code" layoutX="30.0" layoutY="118.0" onAction="#cmbitemOnAction" prefWidth="150.0" promptText="Item Code" styleClass="lablebtn" />
+         </children>
+      </Pane>
+      <Pane layoutX="11.0" layoutY="7.0" opacity="0.86" prefHeight="50.0" prefWidth="894.0" style="-fx-background-color: #028197;" styleClass="lablebtn">
+         <children>
+            <Label layoutX="14.0" layoutY="-1.0" prefHeight="50.0" prefWidth="278.0" text="ORDERS DETAILS">
+               <font>
+                  <Font name="Cambria Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="747.0" layoutY="692.0" mnemonicParsing="false" onAction="#PlaceOrderOnAction" prefHeight="48.0" prefWidth="150.0" style="-fx-background-color: #00BBBE;" styleClass="btn" stylesheets="@../../../../../../Downloads/Dr.Doomore_Veterinary_Clinic-master/Dr.Doomore_Veterinary_Clinic-master/src/main/resources/style/style.css" text="Place Order" />
+      <Button layoutX="741.0" layoutY="66.0" mnemonicParsing="false" onAction="#orderdetailsOnAction" prefHeight="48.0" prefWidth="150.0" style="-fx-background-color: #00BBBE;" styleClass="btn" stylesheets="@../../../../../../Downloads/Dr.Doomore_Veterinary_Clinic-master/Dr.Doomore_Veterinary_Clinic-master/src/main/resources/style/style.css" text=" Order Details" textAlignment="CENTER" />
+      <Label layoutX="46.0" layoutY="694.0" text="Total :">
+         <font>
+            <Font name="Cambria Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="142.0" layoutY="695.0" text="25000.00">
+         <font>
+            <Font name="Cambria Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblOrders" layoutX="17.0" layoutY="409.0" prefHeight="278.0" prefWidth="863.0">
+         <columns>
+            <TableColumn fx:id="col_code" prefWidth="135.0" text="Code" />
+            <TableColumn fx:id="colqty" prefWidth="124.0" text="qty" />
+            <TableColumn fx:id="colunitPrice" prefWidth="200.0" text="Unit Price" />
+            <TableColumn fx:id="colamount" prefWidth="191.0" text="Amount" />
+            <TableColumn fx:id="colAction" prefWidth="212.0" text="Col Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
